@@ -12,7 +12,12 @@ def load_dataframe(request):
     return JsonResponse({'result': 'Data loaded', 'data': data})
 
 def perform_analysis(request):
-    analyzer_func(data)
+    analyzer_func(data) 
+    """
+    Here, we can copy over the dataframe in order to not amend it. Likely,
+    we should have getters and setters for the data in a separate file that are
+    imported in and leave the data as a private variable in that class.
+    """
     return JsonResponse({'result': 'analysis performed', 'data': data})
 
 def analyzer_func(some_data):
