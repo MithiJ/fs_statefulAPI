@@ -12,6 +12,7 @@ def set():
     filepath = request.args.get('filepath')
     # URL: http://127.0.0.1:5000/set?filepath=xyz
     session['key'] = str(filepath)
+    # Instead of storing filepath, we can store JSON
     return 'ok'
 
 @app.route('/get/')
