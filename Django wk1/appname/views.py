@@ -26,3 +26,8 @@ def analyzer_func(some_data):
     for i in range(len(some_data)):
         some_data[i] += 1
     return some_data
+
+# upload name of dataframe
+# add col
+# delete col
+
